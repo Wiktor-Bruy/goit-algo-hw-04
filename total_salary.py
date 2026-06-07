@@ -15,7 +15,7 @@ def total_salary(name: str):
                     new_el = re.sub("\\n", "", el).split(",")
                     total += int(new_el[1])
 
-                average = int(total / len(salarys))
+                average = total / len(salarys)
                 return (total, average)
 
             else:
